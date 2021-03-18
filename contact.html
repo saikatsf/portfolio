@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Recursive">
+    <script src="https://kit.fontawesome.com/06be0bfffe.js" crossorigin="anonymous"></script>
+    <script src="jscripts/navbar.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar" class="defnav">
+        <input type="checkbox" id="ham">
+        <label for="ham" class="menubtn" onclick="iconchange()">
+            <i id="menuicon" class="fas fa-bars"></i> 
+        </label>
+        <label ><a href="#" id="logo" class="deflogo">My Portfolio</a></label>
+        <ul>
+            <li><a href="index.html" id="list">home</a></li>
+            <li><a href="/#about" id="list" onclick="checkifcheck()">about</a></li>
+            <li><a href="#" id="list">projects</a></li>
+            <li><a href="#" id="list">contact me</a></li>
+        </ul>
+    </nav>
+    <section id="container">
+        <section id="sidebar">
+            <ul>
+                <li><a href="https://www.facebook.com/saikatfouzdar.s21/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+                <li><a href="https://twitter.com/FouzdarSaikat"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/saikatf21/"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                <li><a href="https://www.linkedin.com/in/saikat-fouzdar-8314571b0/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+                <li><a href="https://github.com/saikatsf"><i class="fab fa-github"></i><span>Github</span></a></li>
+            </ul>
+        </section>
+        <div id="contactdiv">
+            
+            <div id="contactinfo">
+
+                <div id="box">
+                    <div id="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div id="text">
+                        <h3>Address : </h3>
+                        Salap Kalitala, Howrah - 711409
+                    </div>
+                </div>
+
+                <div id="box">
+                    <div id="icon">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div id="text">
+                        <h3>Call me : </h3>
+                        9874808024
+                    </div>
+                </div>
+
+                <div id="box">
+                    <div id="icon">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div id="text">
+                        <h3>Email me :</h3>
+                    saikatfouzdar.s@gmail.com<br>saikatmax.sf@gmail.com
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="contactform">
+
+                <form>
+                    <input type="text" placeholder="Enter your Full name"><br><br>
+                    <input type="text" placeholder="Enter your Email"><br><br>
+                    <textarea placeholder="Enter your Message" id="message"></textarea><br><br>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        &#169 2020-21. All rights reserved to Saikat Fouzdar.
+    </footer>
+
+</body>
+</html>

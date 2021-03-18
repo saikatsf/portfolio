@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+
+/* the main content area*/
+#mainpart{
+    display: flex;
+    background: url("../docs/1236480.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+/*the introduction box*/
+#intro{
+    padding: 30px;
+    background-color: rgba(23,137,223,0.3);
+    border-radius: 20px;
+    position:relative;
+    height: 150px;
+    left: 20%;
+    width: 30%;
+    top:200px;
+    color: white;
+}
+#intro #detail{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: sliding 3.5s infinite;
+}
+      
+/* The typing effect */
+@keyframes sliding {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+#intro #cv{
+    font-family: "Redressed", serif;
+    font-size: 20px;
+    margin-top: 35px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: white;
+    color:rgba(23,137,223);
+    padding: 8px;
+    width: 180px;
+}
+#cv:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+    /* Lowering the shadow */ 
+} 
+
+/*the image*/
+#mainpart img{
+    border: 10px hidden rgba(23,137,223);
+    border-radius: 50%;
+    box-shadow:rgba(23,137,223,0.8) 0 0 50px;
+    position: relative;
+    top: 200px;
+    left: 30%;
+    height: 210px;
+    width: 210px;
+}
+
+
+
+/*for about section*/
+#about{
+    border-top: 2px solid white ;
+    background-color: black;
+    padding: 40px;
+}
+#about div{
+    color: white;
+    margin-left: 30px;
+}
+#about div span{
+    font-size: 50px;
+}
+
+/*footer section*/
+#footer{
+    border: 3px solid grey;
+    text-align: center;
+}
+
+
+/*responsive section*/
+
+@media(max-width:768px){
+    #intro{
+        height: 160px;
+        width: 50%;
+        top :130px;
+        left: 30%;
+    }
+    #mainpart img{
+        top: 380px;
+        left: -15%;
+    }
+    
+}
+
+@media(max-width:480px){
+    
+    #intro{
+        height: 190px;
+        width: 200px;
+    }
+    #detail{
+        font-size: 10px;
+    }
+    #intro #cv{
+        height: 30px;
+        width: 60px;
+        font-size: 15px;
+        margin-top: 75px;
+    }
+
+    #mainpart img{
+        top: 400px;
+        left: -20%;
+        height: 150px;
+        width: 150px;
+    }
+    
+}
+
+@media(max-width:400px){
+    
+    #intro #cv{
+        margin-top: 35px;
+    }
+    
+}

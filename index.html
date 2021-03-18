@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/indexstyles.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Redressed">
+    <script src="https://kit.fontawesome.com/06be0bfffe.js" crossorigin="anonymous"></script>
+    <script src="jscripts/navbar.js"></script>
+    <script src="jscripts/indexscript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar" class="defnav">
+        <input type="checkbox" id="ham">
+        <label for="ham" class="menubtn" onclick="iconchange()">
+            <i id="menuicon" class="fas fa-bars"></i> 
+        </label>
+        <label ><a href="#" id="logo" class="deflogo">My Portfolio</a></label>
+        <ul>
+            <li><a href="#" id="list">home</a></li>
+            <li><a href="#about" id="list" onclick="checkifcheck()">about</a></li>
+            <li><a href="#" id="list">projects</a></li>
+            <li><a href="contact.html" id="list">contact me</a></li>
+        </ul>
+    </nav>
+
+    <section id="mainpart">
+        <section id="sidebar">
+            <ul>
+                <li><a href="https://www.facebook.com/saikatfouzdar.s21/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+                <li><a href="https://twitter.com/FouzdarSaikat"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/saikatf21/"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                <li><a href="https://www.linkedin.com/in/saikat-fouzdar-8314571b0/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+                <li><a href="https://github.com/saikatsf"><i class="fab fa-github"></i><span>Github</span></a></li>
+            </ul>
+        </section>
+        <div id="intro">
+            <h1>Hello, I'm Saikat</h1> <br>
+            <h3>I'm a</h3><h2 id="detail">Web Developer.</h2>
+
+            <a href="docs/resume.pdf"> <!--download="Resume-SaikatFouzdar"-->
+                <div id="cv">Download Resume</div>
+            </a>
+        </div>
+        <img src="docs/cropped.jpeg" alt="profileimage">
+    </section>
+
+    <section id="about">
+        <div>
+            <span>About Me</span>
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id neque aliquam vestibulum morbi. At augue eget arcu dictum. Tincidunt dui ut ornare lectus sit amet. Arcu cursus euismod quis viverra. Consequat interdum varius sit amet mattis. Ut tellus elementum sagittis vitae. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Ut sem nulla pharetra diam sit. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Vitae justo eget magna fermentum iaculis eu non diam. Est ante in nibh mauris cursus mattis molestie. Pellentesque elit eget gravida cum sociis natoque penatibus et. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Vitae et leo duis ut diam quam nulla porttitor massa. Proin fermentum leo vel orci. Vel orci porta non pulvinar neque laoreet suspendisse. Vehicula ipsum a arcu cursus. Diam sit amet nisl suscipit adipiscing bibendum.
+
+Lorem ipsum dolor sit amet consectetur adipiscing. Nunc sed velit dignissim sodales ut. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Amet mauris commodo quis imperdiet. In mollis nunc sed id semper. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Montes nascetur ridiculus mus mauris. Pulvinar etiam non quam lacus suspendisse faucibus. Lectus sit amet est placerat in. Pellentesque elit eget gravida cum sociis natoque penatibus. Bibendum enim facilisis gravida neque convallis a cras. Cursus euismod quis viverra nibh cras. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. In ornare quam viverra orci. Id leo in vitae turpis massa. Eros donec ac odio tempor. Orci dapibus ultrices in iaculis nunc sed augue. Hac habitasse platea dictumst quisque sagittis purus sit amet. Quis auctor elit sed vulputate mi sit.
+        </div>
+    </section>
+
+    <footer id="footer">
+        &#169 2020-21. All rights reserved to Saikat Fouzdar.
+    </footer>
+</body>
+</html>
