@@ -85,8 +85,18 @@
     color: white;
     margin-left: 30px;
 }
-#about div span{
+#abouthead{
     font-size: 50px;
+}
+#more{
+    display: none;
+}
+#moreBtn{
+    background-color: black;
+    color: White;
+    border: 0px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 /*footer section*/
